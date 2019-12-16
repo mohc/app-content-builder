@@ -3,7 +3,7 @@
 ---
 
 ## Content Builder
-Shopify removed my post on the forum because they know they *** up with the custom sections they promised to deliver by the end of 2019 year. This is why I implementing this app - for free. It will be ready until December 20th, 2019.
+Shopify removed my post on the forum because they know they *** up with the custom sections they promised to deliver by the end of 2019 year. This is why I implementing this app - for free. It will be ready at **December 20th, 2019 or earlier**.
 
 Content Builder is coming soon! **Custom sections everywhere, custom fields everywhere.**
 
