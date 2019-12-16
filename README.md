@@ -9,7 +9,7 @@ Content Builder is coming soon! **Custom sections everywhere, custom fields ever
 
 For example - you just open product page in the app and you can edit content like Wordpress ACF, Statamic or Craft. 
 It uses fieldsets - which are schema on steroids, because you don't have to code them now - drag and drop them! 
-You want to use product fieldset on this one of the article - no problem. Fieldset for collections on one of the pages - who cares, NO PROBLEM! 
+You want to use product fieldset on this one article you need - no problem. Fieldset for the collections on one of the pages - who cares, NO PROBLEM! 
 
 Every item in the store, product, collection, page, article, blog, customer, order, even store - can use every fieldset-schema you create!
 
