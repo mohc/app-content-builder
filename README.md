@@ -13,6 +13,8 @@ You want to use product fieldset on this one article you need - no problem. Fiel
 
 Every item in the store, product, collection, page, article, blog, customer, order, even store - can use every fieldset-schema you create!
 
+Are you pissed off how Shopify treats developers and their clients?
+
 Check the screenshot:
 
 <a href="http://sellfino.com/images/screens/content-builder.jpg" target="_blank" rel="noopener noreferrer"><img src="http://sellfino.com/images/screens/content-builder.jpg"></a> 
