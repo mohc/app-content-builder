@@ -3,9 +3,7 @@
 ---
 
 ## Content Builder
-Shopify removed my post on the forum because they know they *** up with the custom sections they promised to deliver by the end of 2019 year. This is why I implementing this app - for free. It will be ready at **December 20th, 2019 or earlier**.
-
-Content Builder is coming soon! **Custom sections everywhere, custom fields everywhere.**
+Content Builder is coming soon! **Custom sections everywhere, custom fields everywhere.** It will be ready on **December 20th, 2019**.
 
 For example - you just open product page in the app and you can edit content like Wordpress ACF, Statamic or Craft. 
 It uses fieldsets - which are schema on steroids, because you don't have to code them now - drag and drop them! 
@@ -16,8 +14,6 @@ Every item in the store, product, collection, page, article, blog, customer, ord
 Check the screenshot:
 
 <a href="http://sellfino.com/images/screens/content-builder.jpg" target="_blank" rel="noopener noreferrer"><img src="http://sellfino.com/images/screens/content-builder.jpg"></a> 
-
-Are you pissed off how Shopify treats developers and their clients? Let me know below:
 
 #### Support and Contribution
 
