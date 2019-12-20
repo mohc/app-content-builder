@@ -28,13 +28,13 @@ Although content builder can be used for all types of content in your Shopify st
 
 *fieldId* is the ID you set for the field - this is just the example.
 
-#### Text / Textarea / Richtext / Select
+### Text / Textarea / Richtext / Select
 *string*
 ```
 {{ page.metafields.scb.fieldId }}
 ```
 
-#### Links
+### Links
 *array*
 ```
 {% for link in page.metafields.scb.fieldId %}
@@ -47,6 +47,30 @@ Although content builder can be used for all types of content in your Shopify st
 **value** - string value. URL returns full as text, other - handles to elements
 
 **id** - id of the element
+
+### Gallery
+*array*
+```
+{% for file in page.metafields.scb.fieldId %}
+  {{ file.url }} , {{ file.title }}
+{% endfor %}
+```
+
+Gallery can be used for all the files, not only the images. Files are saved in additional theme, created automatically when you activate Content Builder.
+
+#### Image transformations
+As mentioned, files are saved in additional theme, so it's not possible to use `img_url` on the uploaded images. However, Shopify can do the transformations by changing the URL of the image with extra suffixes. To make it much simiplier, you can use the snippet, added to this repository, called `img_url.liquid`:
+- **1.** Add `img_url.liquid` to your theme under *Snippets* folder
+- **2.** In the image tag, include the snippet like below:
+```
+<img src="{% include 'img_url' with url: fieldId[0].url, params: '160x' %}" />
+```
+**url** - URL of the image
+
+**params** - parameters of transformation. Few examples what can be used as parameter:
+```
+160x, 300x300, x50, 150x150_crop_center
+```
 
 ## Sellfino Open Source Shopify App Store
 This is the app for [Sellfino](https://github.com/sellfino/sellfino) platform.
