@@ -177,7 +177,12 @@ Class App
   private function metaToObj($data, $full = false)
   {
 
-    $content = Shopify::request($data['type'] . '/' . $data['id'] . '/metafields');
+    if ($data['type'] == 'shop') {
+      $content = Shopify::request('metafields');
+    } else {
+      $content = Shopify::request($data['type'] . '/' . $data['id'] . '/metafields');
+    }
+    
     $content = json_decode($content, true);
 
     $metafields = array_map(function($arr) {
@@ -268,7 +273,7 @@ Class App
       }
     }
 
-    $path = $data['type'] . '/' . $data['id'];
+    $path = $data['type'] == 'shop' ? '' : $data['type'] . '/' . $data['id'];
 
     if ($data['blog']) {
       $path = 'blogs/' . $data['blog'] . '/' . $path;

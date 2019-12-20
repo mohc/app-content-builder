@@ -27,7 +27,7 @@
         <div class="col">
           <div class="card shadow">
             <div class="card-header border-0">
-              <h3 class="mb-0">{{ this.item.title }} {{ this.item.first_name }} {{ this.item.last_name }} <p class="m-0"><small>{{ $root.viewPrevData.group }}</small></p></h3>
+              <h3 class="mb-0">{{ this.item.title }} {{ this.item.first_name }} {{ this.item.last_name }} <p class="m-0"><small v-if="$root.viewPrevData">{{ $root.viewPrevData.group }}</small></p></h3>
             </div>
             <div class="card-body pt-0">
               <div class="row">
@@ -111,9 +111,9 @@ module.exports = {
         headers: this.$root.fetchHeaders,
         body: JSON.stringify({
           id: this.item.id, 
-          type: this.$root.viewPrevData.tabActive,
+          type: this.$root.viewPrevData ? this.$root.viewPrevData.tabActive : 'shop',
           content: this.content,
-          blog: this.$root.viewPrevData.tabActive == 'articles' ? this.item.blog_id : false
+          blog: this.$root.viewPrevData && this.$root.viewPrevData.tabActive == 'articles' ? this.item.blog_id : false
         })
       }
 
@@ -138,7 +138,7 @@ module.exports = {
       params = {
         method: 'POST',
         headers: this.$root.fetchHeaders,
-        body: JSON.stringify({id: this.item.id, type: this.$root.viewPrevData.tabActive})
+        body: JSON.stringify({id: this.item.id, type: this.$root.viewPrevData ? this.$root.viewPrevData.tabActive : 'shop'})
       }
 
       fetch(url, params)

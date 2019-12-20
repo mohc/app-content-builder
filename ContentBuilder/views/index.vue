@@ -185,6 +185,9 @@ module.exports = {
         this.loading = false
         this.tabActive = handle
 
+        this.$root.viewData = { id: 'shop', title: 'Global' }
+        this.$root.view = 'ContentBuilder-editor'
+
       } else {
 
         url = '/api/shopify'
