@@ -28,12 +28,13 @@ Although content builder can be used for all types of content in your Shopify st
 
 *fieldId* is the ID you set for the field - this is just the example.
 
+---
 ### Text / Textarea / Richtext / Select
 *string*
 ```
 {{ page.metafields.scb.fieldId }}
 ```
-
+---
 ### Links
 *array*
 ```
@@ -48,6 +49,7 @@ Although content builder can be used for all types of content in your Shopify st
 
 **id** - id of the element
 
+---
 ### Gallery
 *array*
 ```
@@ -71,7 +73,11 @@ As mentioned, files are saved in additional theme, so it's not possible to use `
 ```
 160x, 300x300, x50, 150x150_crop_center
 ```
+---
+### Sections
+*array*
 
+---
 ## Sellfino Open Source Shopify App Store
 This is the app for [Sellfino](https://github.com/sellfino/sellfino) platform.
 
