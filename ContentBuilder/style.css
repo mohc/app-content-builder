@@ -1,0 +1,191 @@
+.field-edit {
+  border: 1px solid #cad1d7;
+  border-radius: .375rem;
+  padding: 1.25rem 1.5rem;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.field-edit [class^="drag"], .field-edit .remove {
+  cursor: move;
+  width: 26px;
+  height: 26px;
+  background: #f4f6f8;
+  border-radius: 50%;
+  border: 1px solid #cad1d7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -13px;
+  margin-top: -13px;
+  z-index: 2;
+  text-align: center;
+}
+
+.field-edit .remove {
+  left: auto; left: initial;
+  margin-left: 0;
+  right: 0;
+  margin-right: -13px;
+  cursor: pointer;
+}
+
+.field-edit .inner {
+  padding: 1.25rem 1.5rem;
+  background: #fff;
+  border-radius: .375rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.field-edit .inner.alt {
+  background: #eef0f2
+}
+
+.field-edit .inner.alt [class^="drag"], .field-edit .inner.alt .remove {
+  background: #eef0f2
+}
+
+.field-edit .inner [data-type="select"] .inner {
+  background: #f4f6f8;
+}
+
+.field-edit .inner .inner [class^="drag"], .field-edit .inner .inner .remove {
+  background: #fff;
+}
+
+.field-edit .field-edit-body {
+  display: none;
+}
+
+.field-edit .field-edit-header.inner-open + .field-edit-body {
+  display: block;
+}
+
+.field-edit .field-edit-header {
+  cursor: pointer;
+  position: relative;
+}
+
+.field-edit .field-edit-header::after {
+  content: "\f3be";
+  position: absolute;
+  display: block;
+  font-size: 16px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.field-edit.no-fields {
+  background: #fff!important;
+}
+
+.field-edit.no-fields .field-edit-header {
+  pointer-events: none!important;
+}
+
+.field-edit.no-fields .field-edit-header::after {
+  display: none;
+}
+
+.field-edit.field-edit-header.inner-open::after {
+  content: "\f3bf";
+}
+
+.pell-button[title="Heading 1"],
+.pell-button[title="Heading 2"] {
+  width: 40px!important;
+}
+
+.shown-source .pell-content {
+  display: none;
+}
+
+.shown-source .pell-button {
+  opacity: .5;
+  pointer-events: none;
+}
+
+.shown-source .pell-button[title="Show source"] {
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+.uploaded .file:hover {
+  background: #f5f7f8;
+}
+
+.uploaded .file + .file {
+  margin-top: 5px;
+}
+
+.uploaded .file .thumb {
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #dfe3e8;
+  width: 40px;
+  height: 40px;
+}
+
+.uploaded .file .thumb .ext {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  color: #bcc2c9;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.uploaded .file .thumb .bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.uploaded .file .url {
+  width: calc(100% - 90px);
+  margin-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.uploaded .file .url input{
+  font-size: 12px;
+  color: #637381;
+  display: block;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  height: 16px;
+  background: none;
+  width: 100%;
+}
+
+.inner-fields {
+  background: #f9f9f9;
+}
+
+.inner-fields .card.shadow {
+  box-shadow: none!important;
+  border: 1px solid #cad1d7;
+}

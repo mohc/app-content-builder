@@ -1,0 +1,13 @@
+{
+  "name": "Content Builder",
+  "handle": "ContentBuilder",
+  "info": "Build pages with custom fields and sections like WP ACF, Statamic or CraftCMS",
+  "settings": true,
+  "docs": "https://github.com/sellfino/app-content-builder",
+  "author": {
+    "name": "Lucas • Sellfino",
+    "url": "https://www.sellfino.com"
+  },
+  "version": "1.0.0",
+  "queue": false
+}
