@@ -17,6 +17,37 @@ Check how this app works in the live store: [DEMO](https://sellfino.myshopify.co
 
 <a href="https://sellfino.com/images/screens/scb/scb-1.jpg" target="_blank" rel="noopener noreferrer"><img width="24%" src="https://sellfino.com/images/screens/scb/scb-1a.jpg"></a> <a href="https://sellfino.com/images/screens/scb/scb-2.jpg" target="_blank" rel="noopener noreferrer"><img width="24%" src="https://sellfino.com/images/screens/scb/scb-2.jpg"></a> <a href="https://sellfino.com/images/screens/scb/scb-3.jpg" target="_blank" rel="noopener noreferrer"><img width="24%" src="https://sellfino.com/images/screens/scb/scb-3.jpg"></a> <a href="https://sellfino.com/images/screens/scb/scb-4.jpg" target="_blank" rel="noopener noreferrer"><img width="24%" src="https://sellfino.com/images/screens/scb/scb-4a.jpg"></a> <a href="https://sellfino.com/images/screens/scb/scb-5.jpg" target="_blank" rel="noopener noreferrer"><img width="24%" src="https://sellfino.com/images/screens/scb/scb-5.jpg"></a> <a href="https://sellfino.com/images/screens/scb/scb-6.jpg" target="_blank" rel="noopener noreferrer"><img width="24%" src="https://sellfino.com/images/screens/scb/scb-6.jpg"></a> 
 
+## Installation
+- **1.** Add this app to Sellfino App Store.
+- **2.** Add your first fieldset first. For each field ID is required and has to be unique through out the whole schema. Fieldsets are saved in `ContentBuilder.json` file, so you can export/import them with just copy-paste.
+- **3.** Go back to index page of the app and choose the element you want to edit.
+- **4.** Choose the fieldset and save it. Whole content, with fieldset id too, is saved in element's metafields (*scb* namespace). Below is the information for specific fields and how to use them in liquid files.
+
+## Fields
+Although content builder can be used for all types of content in your Shopify store (product, collection, customer, etc) - for making it as simple to explain, we will show to use fields based on the metafields of the simple page.
+
+*fieldId* is the ID you set for the field - this is just the example.
+
+#### Text / Textarea / Richtext / Select
+*string*
+```
+{{ page.metafields.scb.fieldId }}
+```
+
+#### Links
+*array*
+```
+{% for link in page.metafields.scb.fieldId %}
+  {{ link.type }} , {{ link.value }} , {{ link.id }}
+{% endfor %}
+```
+
+**type** - type of the link (product, collection, custom url)
+
+**value** - string value. URL returns full as text, other - handles to elements
+
+**id** - id of the element
+
 ## Sellfino Open Source Shopify App Store
 This is the app for [Sellfino](https://github.com/sellfino/sellfino) platform.
 
