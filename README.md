@@ -12,9 +12,13 @@ You want to use product fieldset on this one article you need - no problem. Fiel
 
 **Every item** in the store, product, collection, page, article, blog, customer, order, even store - can use every fieldset-schema you create! Sections available everywhere without hacks and tricks - content is saved in metafields so you have access to it from every part of the website!
 
-Check the screenshot:
+## Demo & Screenshots
+Check how this app works in the live store: [DEMO](https://sellfino.myshopify.com/pages/content-builder-sample-page)
 
-<a href="http://sellfino.com/images/screens/content-builder.jpg" target="_blank" rel="noopener noreferrer"><img src="http://sellfino.com/images/screens/content-builder.jpg"></a> 
+<a href="https://sellfino.com/images/screens/scb/scb-1.jpg" target="_blank" rel="noopener noreferrer"><img width="24%" src="https://sellfino.com/images/screens/scb/scb-1a.jpg"></a> <a href="https://sellfino.com/images/screens/scb/scb-2.jpg" target="_blank" rel="noopener noreferrer"><img width="24%" src="https://sellfino.com/images/screens/scb/scb-2.jpg"></a> <a href="https://sellfino.com/images/screens/scb/scb-3.jpg" target="_blank" rel="noopener noreferrer"><img width="24%" src="https://sellfino.com/images/screens/scb/scb-3.jpg"></a> <a href="https://sellfino.com/images/screens/scb/scb-4.jpg" target="_blank" rel="noopener noreferrer"><img width="24%" src="https://sellfino.com/images/screens/scb/scb-4a.jpg"></a> <a href="https://sellfino.com/images/screens/scb/scb-5.jpg" target="_blank" rel="noopener noreferrer"><img width="24%" src="https://sellfino.com/images/screens/scb/scb-5.jpg"></a> <a href="https://sellfino.com/images/screens/scb/scb-6.jpg" target="_blank" rel="noopener noreferrer"><img width="24%" src="https://sellfino.com/images/screens/scb/scb-6.jpg"></a> 
+
+## Sellfino Open Source Shopify App Store
+This is the app for [Sellfino](https://github.com/sellfino/sellfino) platform.
 
 #### Support and Contribution
 
