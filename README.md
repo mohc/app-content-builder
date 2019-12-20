@@ -77,6 +77,16 @@ As mentioned, files are saved in additional theme, so it's not possible to use `
 ### Sections
 *array*
 
+The cleanest way to handle sections is to put every section into the individual snippet. If you prefix all the snippets with *scb-*, you can use the code below to include the sections:
+```
+{% for block in page.metafields.scb.fieldId %}
+  {% assign data = block.value %}
+	{% assign section_name = 'scb-' | append: block.type %}
+	{% include section_name with data %}
+{% endfor %}
+```
+Then, with `data` variable, you can access fields for the specific block (*data.fieldId*)
+
 ---
 ## Sellfino Open Source Shopify App Store
 This is the app for [Sellfino](https://github.com/sellfino/sellfino) platform.
