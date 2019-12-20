@@ -1,0 +1,10 @@
+{%- if params == blank -%}
+  {{ url }}
+{%- else -%}
+  {%- assign parts = url | split: '.' -%}
+  {%- assign index = parts | size | minus: 2 -%}
+  {%- assign img = parts[index] | append: '_' | append: params -%}
+  {%- for part in parts -%}
+    {%- if forloop.index0 == index -%}{{ img }}{%- else -%}{{ part }}{%- endif -%}{%- unless forloop.last -%}.{%- endunless -%}
+  {%- endfor -%}
+{%- endif -%}
