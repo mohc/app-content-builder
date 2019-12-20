@@ -5,11 +5,12 @@
 ## Content Builder
 **Custom sections everywhere, custom fields everywhere.**
 
-Open element (product, page, article, customer, etc.) in the app and you can edit content like Wordpress ACF, Statamic or Craft. 
+Open element (product, page, article, customer, etc.) in the app and you can edit content like *Wordpress ACF, Statamic or Craft*.
+
 Content Builder uses fieldsets - which are schema on steroids, because you don't have to code them by hand - drag and drop them! 
 You want to use product fieldset on this one article you need - no problem. Fieldset for the collections on one of the pages - who cares, NO PROBLEM! 
 
-Every item in the store, product, collection, page, article, blog, customer, order, even store - can use every fieldset-schema you create! Sections available everywhere without hacks and tricks - content is saved in metafields so you have access to it from every part of the website!
+**Every item** in the store, product, collection, page, article, blog, customer, order, even store - can use every fieldset-schema you create! Sections available everywhere without hacks and tricks - content is saved in metafields so you have access to it from every part of the website!
 
 Check the screenshot:
 
