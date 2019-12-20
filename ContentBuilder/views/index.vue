@@ -63,7 +63,7 @@
                     <th scope="row">
                       <div class="media align-items-center">
                         <a class="avatar rounded-circle mr-3" v-if="el.image">
-                          <img :src="img_url(el.image.src, 'small')">
+                          <img :src="img_url(el.image.src)">
                         </a>
                         <div class="media-body">
                           <span class="name mb-0 text-sm">
