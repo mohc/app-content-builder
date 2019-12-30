@@ -232,6 +232,7 @@ module.exports = {
         })
         .catch((error) => {
           alert(error)
+          self.loading = false
         })
 
       }

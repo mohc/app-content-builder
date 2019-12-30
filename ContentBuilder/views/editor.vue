@@ -146,6 +146,7 @@ module.exports = {
       .then(function(res) {
         self.loading = false
         self.fieldsets = res.fieldsets
+        self.$root.themeId = res.themeId
         Vue.set(self, 'content', Object.entries(res.content).length || res.content.length ? res.content : {})
       })
       .catch((error) => {

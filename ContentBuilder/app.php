@@ -218,7 +218,8 @@ Class App
 
     Helpers::json([
       'fieldsets' => array_filter($items, function($fieldset) { return $fieldset['active']; }),
-      'content' => $this->metaToObj($data)
+      'content' => $this->metaToObj($data),
+      'themeId' => DB::get('assets_theme')
     ]);
 
   }
